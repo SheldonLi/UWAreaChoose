@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		32F033818BFA5C1948838080 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1566896D58A3C6FE695ED1C9 /* libPods.a */; };
+		BF5442731C09BA7600EC53F3 /* region.db in Resources */ = {isa = PBXBuildFile; fileRef = BF5442661C09BA7600EC53F3 /* region.db */; };
+		BF5442741C09BA7600EC53F3 /* UWAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5442681C09BA7600EC53F3 /* UWAreaModel.m */; };
+		BF5442751C09BA7600EC53F3 /* UWAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54426A1C09BA7600EC53F3 /* UWAreaPickerView.m */; };
+		BF5442761C09BA7600EC53F3 /* UWAreaTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54426C1C09BA7600EC53F3 /* UWAreaTableView.m */; };
+		BF5442771C09BA7600EC53F3 /* UWAreaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54426E1C09BA7600EC53F3 /* UWAreaTool.m */; };
+		BF5442781C09BA7600EC53F3 /* UWChooseAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5442701C09BA7600EC53F3 /* UWChooseAreaViewController.m */; };
+		BF5442791C09BA7600EC53F3 /* UWDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5442721C09BA7600EC53F3 /* UWDBManager.m */; };
 		BF58334D1C06AB0800E745D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58334C1C06AB0800E745D3 /* main.m */; };
 		BF5833501C06AB0800E745D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58334F1C06AB0800E745D3 /* AppDelegate.m */; };
 		BF5833531C06AB0800E745D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5833521C06AB0800E745D3 /* ViewController.m */; };
@@ -39,6 +46,19 @@
 		1566896D58A3C6FE695ED1C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4499311EE81F3661ED2AA4D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		74DDB3986779102C72196835 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF5442661C09BA7600EC53F3 /* region.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = region.db; sourceTree = "<group>"; };
+		BF5442671C09BA7600EC53F3 /* UWAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWAreaModel.h; sourceTree = "<group>"; };
+		BF5442681C09BA7600EC53F3 /* UWAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWAreaModel.m; sourceTree = "<group>"; };
+		BF5442691C09BA7600EC53F3 /* UWAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWAreaPickerView.h; sourceTree = "<group>"; };
+		BF54426A1C09BA7600EC53F3 /* UWAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWAreaPickerView.m; sourceTree = "<group>"; };
+		BF54426B1C09BA7600EC53F3 /* UWAreaTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWAreaTableView.h; sourceTree = "<group>"; };
+		BF54426C1C09BA7600EC53F3 /* UWAreaTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWAreaTableView.m; sourceTree = "<group>"; };
+		BF54426D1C09BA7600EC53F3 /* UWAreaTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWAreaTool.h; sourceTree = "<group>"; };
+		BF54426E1C09BA7600EC53F3 /* UWAreaTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWAreaTool.m; sourceTree = "<group>"; };
+		BF54426F1C09BA7600EC53F3 /* UWChooseAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWChooseAreaViewController.h; sourceTree = "<group>"; };
+		BF5442701C09BA7600EC53F3 /* UWChooseAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWChooseAreaViewController.m; sourceTree = "<group>"; };
+		BF5442711C09BA7600EC53F3 /* UWDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWDBManager.h; sourceTree = "<group>"; };
+		BF5442721C09BA7600EC53F3 /* UWDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWDBManager.m; sourceTree = "<group>"; };
 		BF5833481C06AB0800E745D3 /* UWAreaChoose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWAreaChoose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF58334C1C06AB0800E745D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF58334E1C06AB0800E745D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +120,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF5442651C09BA7600EC53F3 /* AreaChooseTool */ = {
+			isa = PBXGroup;
+			children = (
+				BF5442661C09BA7600EC53F3 /* region.db */,
+				BF5442671C09BA7600EC53F3 /* UWAreaModel.h */,
+				BF5442681C09BA7600EC53F3 /* UWAreaModel.m */,
+				BF5442691C09BA7600EC53F3 /* UWAreaPickerView.h */,
+				BF54426A1C09BA7600EC53F3 /* UWAreaPickerView.m */,
+				BF54426B1C09BA7600EC53F3 /* UWAreaTableView.h */,
+				BF54426C1C09BA7600EC53F3 /* UWAreaTableView.m */,
+				BF54426D1C09BA7600EC53F3 /* UWAreaTool.h */,
+				BF54426E1C09BA7600EC53F3 /* UWAreaTool.m */,
+				BF54426F1C09BA7600EC53F3 /* UWChooseAreaViewController.h */,
+				BF5442701C09BA7600EC53F3 /* UWChooseAreaViewController.m */,
+				BF5442711C09BA7600EC53F3 /* UWDBManager.h */,
+				BF5442721C09BA7600EC53F3 /* UWDBManager.m */,
+			);
+			path = AreaChooseTool;
+			sourceTree = "<group>";
+		};
 		BF58333F1C06AB0800E745D3 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +165,7 @@
 		BF58334A1C06AB0800E745D3 /* UWAreaChoose */ = {
 			isa = PBXGroup;
 			children = (
+				BF5442651C09BA7600EC53F3 /* AreaChooseTool */,
 				BF58334E1C06AB0800E745D3 /* AppDelegate.h */,
 				BF58334F1C06AB0800E745D3 /* AppDelegate.m */,
 				BF5833511C06AB0800E745D3 /* ViewController.h */,
@@ -270,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF58335B1C06AB0800E745D3 /* LaunchScreen.storyboard in Resources */,
+				BF5442731C09BA7600EC53F3 /* region.db in Resources */,
 				BF5833581C06AB0800E745D3 /* Assets.xcassets in Resources */,
 				BF5833561C06AB0800E745D3 /* Main.storyboard in Resources */,
 			);
@@ -329,9 +371,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5442761C09BA7600EC53F3 /* UWAreaTableView.m in Sources */,
+				BF5442751C09BA7600EC53F3 /* UWAreaPickerView.m in Sources */,
 				BF5833531C06AB0800E745D3 /* ViewController.m in Sources */,
 				BF5833501C06AB0800E745D3 /* AppDelegate.m in Sources */,
+				BF5442781C09BA7600EC53F3 /* UWChooseAreaViewController.m in Sources */,
+				BF5442791C09BA7600EC53F3 /* UWDBManager.m in Sources */,
+				BF5442741C09BA7600EC53F3 /* UWAreaModel.m in Sources */,
 				BF58334D1C06AB0800E745D3 /* main.m in Sources */,
+				BF5442771C09BA7600EC53F3 /* UWAreaTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
