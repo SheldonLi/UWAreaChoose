@@ -17,19 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajv-Bj-VNS">
-                                <rect key="frame" x="126" y="187" width="134" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajv-Bj-VNS">
+                                <rect key="frame" x="210" y="187" width="180" height="30"/>
                                 <animations/>
-                                <state key="normal" title="AreaChoose"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="9J6-JU-eeq"/>
+                                </constraints>
+                                <state key="normal" title="城市选择"/>
                                 <connections>
                                     <action selector="areaChooseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yOs-5s-F6X"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejR-FA-Lt4">
+                                <rect key="frame" x="190" y="297.5" width="220" height="20.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Cza-BS-lgG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP7-sC-AHK">
+                                <rect key="frame" x="190" y="247" width="220" height="20.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="oqL-zZ-AgI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ajv-Bj-VNS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AG6-Ws-LQ0"/>
+                            <constraint firstItem="ajv-Bj-VNS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="Gs9-AC-j2q"/>
+                            <constraint firstItem="ejR-FA-Lt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OoX-Kb-kOv"/>
+                            <constraint firstItem="wP7-sC-AHK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3c-Tt-FqY"/>
+                            <constraint firstItem="ejR-FA-Lt4" firstAttribute="top" secondItem="wP7-sC-AHK" secondAttribute="bottom" constant="30" id="obe-yN-2rH"/>
+                            <constraint firstItem="wP7-sC-AHK" firstAttribute="top" secondItem="ajv-Bj-VNS" secondAttribute="bottom" constant="30" id="uJv-TM-k52"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ike-dJ-79Z"/>
+                    <connections>
+                        <outlet property="areaIdLabel" destination="ejR-FA-Lt4" id="ORd-Ws-U5k"/>
+                        <outlet property="areaNameLabel" destination="wP7-sC-AHK" id="uNX-sN-C0u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

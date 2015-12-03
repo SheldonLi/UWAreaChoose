@@ -12,6 +12,8 @@
 
 #define DBPATH_REGION [[NSBundle mainBundle] pathForResource:@"region" ofType:@"db"]
 
+#define ARRAY_IS_EMPTY(array) ((!array ||[array count] == 0)? YES: NO)
+
 @interface UWAreaTool ()
 
 @property(nonatomic, strong) FMDatabase *dataBase;

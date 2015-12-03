@@ -26,6 +26,9 @@ static const CGFloat kTitleHeight = 36.f;
 #define kViewWidth (self.view.bounds.size.width)
 #define kViewHeight (self.view.bounds.size.height)
 
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+
 //指示条动画时间
 static const CGFloat kAnimationTime = 0.25f;
 
@@ -71,7 +74,7 @@ static const NSUInteger kButtonBaseTag = 1000;
     if (self.backgroundColor) {
         self.view.backgroundColor = self.backgroundColor;
     } else {
-        self.view.backgroundColor = COLOR_BASE_GRAY;
+        self.view.backgroundColor = [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
     }
 
     //  初始化名字
@@ -131,7 +134,7 @@ static const NSUInteger kButtonBaseTag = 1000;
         [_titleView addSubview:btn];
         if (i == 0) {
             _currentBottomLineView = [[UIView alloc]
-                initWithFrame:CGRectMake(0, kTitleHeight - 1, ScreenWidth / buttonCount, 1)];
+                initWithFrame:CGRectMake(0, kTitleHeight - 1, kScreenWidth / buttonCount, 1)];
             // 如果自定义主色，使用自定义，否则用红色
             if (self.indicatorViewColor) {
                 _currentBottomLineView.backgroundColor = self.indicatorViewColor;

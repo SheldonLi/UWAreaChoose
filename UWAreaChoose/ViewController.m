@@ -10,6 +10,9 @@
 #import "UWChooseAreaViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *areaNameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *areaIdLabel;
 
 @end
 
@@ -37,10 +40,22 @@
     //  完成回调：获取城市ID数组
     chooseVC.completionBlockWithCityIdArray = ^(NSArray *areaModelArray) {
         NSLog(@"%@", areaModelArray);
+        NSMutableString *mStr = [NSMutableString string];
+        for (NSNumber *num in areaModelArray) {
+            [mStr appendString:num.description];
+            [mStr appendString:@","];
+        }
+        self.areaIdLabel.text = [mStr substringToIndex:mStr.length-1];
     };
     //  完成回调：获取城市名数组
     chooseVC.completionBlockWithCityNameArray = ^(NSArray *areaModelArray) {
         NSLog(@"%@", areaModelArray);
+        NSMutableString *mStr = [NSMutableString string];
+        for (NSString *str in areaModelArray) {
+            [mStr appendString:str];
+            [mStr appendString:@","];
+        }
+        self.areaNameLabel.text = [mStr substringToIndex:mStr.length-1];
     };
     //  弹出控制器
     [self.navigationController pushViewController:chooseVC animated:YES];

@@ -12,7 +12,7 @@
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"regionName:%@  regionType:%ld  parentId:%ld  regionId:%ld",
-                                      _regionName, _regionType, _parentId, _regionId];
+                                      _regionName, (unsigned long)_regionType, _parentId, _regionId];
 }
 
 
