@@ -1,4 +1,7 @@
 #中国省市地区选择工具
+![](https://github.com/SheldonLi/UWAreaChoose/blob/master/Snapshots/areaChoose.gif?raw=true)
+
+
 
 把```AreaChooseTool``` 文件夹拖到工程即可使用。
 
@@ -10,7 +13,8 @@
 - UWAreaTool提供一个地区的数据的数据读取工具  
 - UWChooseAreaViewController提供一个可视化的地区选择的控制器  
 
-    ```//  创建城市选择控制器
+    ```
+    //  创建城市选择控制器
     UWChooseAreaViewController *chooseVC = [[UWChooseAreaViewController alloc] init];
     //  修改标题
     chooseVC.titleString = @"城市选择";
